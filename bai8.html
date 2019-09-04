@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai8</title>
+</head>
+<body>
+<script>
+
+    let a = new Array(10);
+    for (let i = 0; i < 10; i++) {
+        a[i]=new Array(10);
+
+        for(let j=0;j<10;j++){
+        a[i] [j]= Math.floor(Math.random() * 100);
+        //a[i] = parseInt(prompt("nhap a"));
+    }document.write("<br/>");
+    }
+    function dow() {
+        let tg;
+        for (let i = 0, j = 9; i < j, j > i; i++, j--) {
+            tg = a[i];
+            a[i] = a[j];
+            a[j] = tg;
+        }
+    }
+    dow();
+    document.write(a);
+</script>
+</body>
+</html>

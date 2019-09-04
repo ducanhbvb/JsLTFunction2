@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+<script>
+    function min() {
+        let number1=parseInt(prompt("Number one"));
+        let number2=parseInt(prompt("Number two"));
+        let number3=parseInt(prompt("Number three"));
+        switch (true) {
+            case (number1<=number2&&number1<=number3):
+                document.write(" Min= "+number1);
+                break;
+            case (number3<=number2&&number3<=number1):
+                document.write(" Min= "+number3);
+                break;
+            case (number2<=number1&&number2<=number3):
+                document.write(" Min= "+number2);
+                break;
+            default:
+                document.write("not number");
+        }
+    }
+    min();
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<button type="button" onclick="check(prompt('nhAp so : '))">check</button>
+<p id="result"></p>
+<script>
+    function check(a) {
+        if (isNaN(a)) {
+            document.getElementById("result").innerHTML = "ký tự đã nhập không phải là một số";
+        } else {
+            document.getElementById("result").innerHTML = "ký tự đã nhập là một số";
+        }
+    }
+</script>
+</body>
+</html>

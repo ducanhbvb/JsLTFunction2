@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+
+Nhap R tinh dien tich : <input type="button"onclick="arenal(prompt('radius:='))"value="Arenal">
+Nhap R tinh chu vi : <input type="button"onclick="perimeter(prompt('radius:='))"value="Perimeter">
+<P id="arenal"></P>
+<p id="perimeter"></p>
+<script>
+    function arenal(r) {
+let radius=parseInt(r);
+let s=3.14*radius*radius;
+document.getElementById("arenal").innerHTML="dien tich = "+s;
+    }
+    function perimeter(r) {
+let radius=parseInt(r);
+let s=3.14*radius*2;
+document.getElementById("perimeter").innerHTML="chu vi = "+s;
+    }
+</script>
+</body>
+</html>
